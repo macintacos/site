@@ -1,5 +1,5 @@
 ---
-title: The `macinplanck` Configuration
+title: The macinplanck Config
 description: This is what happens when someone who has too much time on their hands gets a shiny new keyboard
 date: 2020-01-01
 tags:
@@ -10,7 +10,7 @@ layout: layouts/post.njk
 - [Links and Resources](#links-and-resources)
 - [Layers](#layers)
   - [The `Base` Layer](#the-base-layer)
-  - [The `Lower` & `Raise` Layers](#the-lower--raise-layers)
+  - [The `Lower` and `Raise` Layers](#the-lower-and-raise-layers)
   - [The `Adjust` Layer](#the-adjust-layer)
   - [The `NORMAL` Layer](#the-normal-layer)
   - [The `VISUAL` Layer](#the-visual-layer)
@@ -79,7 +79,7 @@ A lot of this layer is the same as the default config. QWERTY layout, `Lower`/`R
 
 And that concludes our `Base` layer tour. Onwards!
 
-### The `Lower` & `Raise` Layers
+### The `Lower` and `Raise` Layers
 
 `Lower`:
 
@@ -204,7 +204,7 @@ Not much else going on here, so onto the next layer.
 
 ### The `NRMLSHIFT` Layer
 
-![nrmlshft layer](./6-nrmlshft.png)
+![nrmlshft layer](/img/macinplanck-configuration/6-nrmlshft.png)
 
 The `NRMLSHFT` layer is only accessible from the `NORMAL` layer and, as the name implies, it contains actions that are analogous to "shifted" keys in Vim's `NORMAL` mode (like `X` or `G`). I didn't do a whole lot of customization here, and there are probably some actions that I've missed; I'll slowly add more as I discover them.
 
@@ -233,7 +233,7 @@ The `NRMLSHFT` layer is only accessible from the `NORMAL` layer and, as the name
 
 ### The `WINDOWZ` Layer
 
-![windowz layer](./7-windowz.png)
+![windowz layer](/img/macinplanck-configuration/7-windowz.png)
 
 This layer doesn't make much sense to the casual onlooker, mostly because it is used exclusively for my window management tool on macOS: [Rectangle](https://github.com/rxhanson/Rectangle). I tile/move/resize my windows on macOS all day thanks to this tool. It's invaluable enough for me that I've dedicated an entire layer to it. The above keymap makes more sense when you see how the keyboard shortcuts for that application are set up on my machine:
 

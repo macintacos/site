@@ -29,9 +29,6 @@ p,
 img {
   max-width: 100%;
 }
-.gist {
-  max-width: 100% !important;
-}
 p,
 .tmpl-post li {
   line-height: 1.45;
@@ -66,10 +63,8 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
-    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
-    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
-    "Courier New", Courier, monospace;
+  font-family: JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo,
+    monospace;
   line-height: 1.5;
 }
 pre {
@@ -209,6 +204,7 @@ a[href].tag:visited {
 .warning {
   background-color: #ffc;
   padding: 1em 0.625em; /* 16px 10px /16 */
+  max-width: 50em;
 }
 .warning ol:only-child {
   margin: 0;
