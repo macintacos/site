@@ -1,4 +1,5 @@
 :root {
+  /* raw color palette */
   --red: #c5004a;
   --darkred: #7f0036;
   --lightgray: #e0e0e0;
@@ -7,55 +8,104 @@
   --navy: #17050f;
   --blue: #082840;
   --white: #fff;
+
+  /* default values */
+  --background-color: white;
+  --text-color: black;
+  --link-text-color: var(--blue);
+  --link-text-color-visited: var(--navy);
+  --image-opacity: 1;
+  --postlist-text-color: var(--darkgray);
 }
+
+@media (prefers-color-scheme: dark) {
+  /* values when in dark mode */
+  :root {
+    --background-color: rgb(17, 17, 17);
+    --text-color: rgb(200, 200, 200);
+    --link-text-color: #3099e9;
+    --link-text-color-visited: #2083cf;
+    --image-opacity: 0.8;
+    --postlist-text-color: rgb(170, 170, 170);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: var(--darkgray);
-  background-color: var(--white);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
+
+.tmpl-post,
+.tmpl-home {
+  margin-right: auto;
+  margin-left: 10em;
+  margin-top: 2em;
+  width: 50em;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
+
 p,
 .tmpl-post li {
   max-width: 45em;
 }
+
 img {
+  transition: all 200ms ease-out;
+  opacity: var(--image-opacity);
   max-width: 100%;
 }
+
+img:hover,
+img:active {
+  opacity: 1;
+}
+
 p,
 .tmpl-post li {
-  line-height: 1.45;
+  line-height: 1.7;
 }
+
 a[href] {
-  color: var(--blue);
+  color: var(--link-text-color);
 }
+
 a[href]:visited {
-  color: var(--navy);
+  color: var(--link-text-color-visited);
 }
+
 main {
   padding: 1rem;
 }
+
 main :first-child {
   margin-top: 0;
 }
+
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px dashed var(--text-color);
 }
+
 header:after {
   content: "";
   display: table;
   clear: both;
 }
+
 table {
   margin: 1em 0;
 }
+
 table td,
 table th {
   padding-right: 1em;
@@ -67,6 +117,7 @@ code {
     monospace;
   line-height: 1.5;
 }
+
 pre {
   font-size: 14px;
   line-height: 1.375;
@@ -86,6 +137,7 @@ pre {
   margin: 0.5em 0;
   background-color: #f6f6f6;
 }
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
@@ -97,6 +149,7 @@ pre {
 .highlight-line:empty:before {
   content: " ";
 }
+
 /* avoid double line breaks when using display: block; */
 .highlight-line + br {
   display: none;
@@ -106,13 +159,16 @@ pre {
   color: #b0b0b0;
   background-color: #222;
 }
+
 .highlight-line-active {
   background-color: #444;
   background-color: hsla(0, 0%, 27%, 0.8);
 }
+
 .highlight-line-add {
   background-color: #45844b;
 }
+
 .highlight-line-remove {
   background-color: #902f2f;
 }
@@ -124,6 +180,7 @@ pre {
   margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
 }
+
 .home :link:not(:hover) {
   text-decoration: none;
 }
@@ -135,16 +192,26 @@ pre {
   float: left;
   margin-left: 1em;
 }
+
 .nav-item {
   display: inline-block;
   margin-right: 1em;
+  color: var(--text-color);
 }
+
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
+  color: var(--text-color);
 }
+
+.nav-item a[href]:hover {
+  color: var(--text-color);
+}
+
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+  color: var(--text-color);
 }
 
 /* Posts list */
@@ -152,9 +219,11 @@ pre {
   list-style: none;
   padding: 0;
 }
+
 .postlist-item {
   counter-increment: start-from -1;
 }
+
 .postlist-item:before {
   display: inline-block;
   pointer-events: none;
@@ -162,21 +231,26 @@ pre {
   line-height: 100%;
   text-align: right;
 }
+
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgray);
+  color: var(--postlist-text-color);
 }
+
 .postlist-date {
   word-spacing: -0.5px;
 }
+
 .postlist-link {
   display: inline-block;
   padding: 0.25em 0.1875em; /* 4px 3px /16 */
 }
+
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
+
 .tmpl-home .postlist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
@@ -195,6 +269,7 @@ pre {
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
 }
+
 a[href].tag,
 a[href].tag:visited {
   color: #fff;
@@ -206,6 +281,7 @@ a[href].tag:visited {
   padding: 1em 0.625em; /* 16px 10px /16 */
   max-width: 50em;
 }
+
 .warning ol:only-child {
   margin: 0;
 }
@@ -217,13 +293,23 @@ a[href].tag:visited {
   font-style: normal;
   margin-left: 0.1em;
 }
+
 a[href].direct-link,
 a[href].direct-link:visited {
   color: transparent;
 }
+
 a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+@media screen and (max-width: 60em) {
+  .tmpl-post,
+  .tmpl-home {
+    margin: auto;
+    width: 100%;
+  }
 }

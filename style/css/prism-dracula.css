@@ -19,6 +19,7 @@ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascr
 */
 
 pre::-webkit-scrollbar {
+  background-color: #bd93f9;
   width: 14px;
 }
 
