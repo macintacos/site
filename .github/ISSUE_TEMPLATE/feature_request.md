@@ -1,7 +1,7 @@
 ---
 name: Propose a change
 about: Suggest an idea/change for this project
-title: ":zap: - <feature>"
+title: "⚡️ change_title"
 labels: '📨 Needs Triage'
 assignees: 'macintacos'
 ---
@@ -10,7 +10,7 @@ assignees: 'macintacos'
 
 <!-- A clear and concise description of what you want to happen. -->
 
-## Describe the problem this is solving
+## What is this solving?
 
 <!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
 
