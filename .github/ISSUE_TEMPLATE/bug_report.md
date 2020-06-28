@@ -4,7 +4,6 @@ about: Create a report to help us improve
 title: "\U0001F41B bug_title"
 labels: "\U0001F4E8 Needs Triage"
 assignees: macintacos
-
 ---
 
 ## Describe the bug
@@ -31,16 +30,16 @@ Steps to reproduce the behavior:
 
 ### Desktop (please complete the following information):
 
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+- OS: [e.g. iOS]
+- Browser [e.g. chrome, safari]
+- Version [e.g. 22]
 
 ### Smartphone (please complete the following information):
 
- - Device: [e.g. iPhone11]
- - OS: [e.g. iOS14]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+- Device: [e.g. iPhone11]
+- OS: [e.g. iOS14]
+- Browser [e.g. stock browser, safari]
+- Version [e.g. 22]
 
 ### Additional context
 
