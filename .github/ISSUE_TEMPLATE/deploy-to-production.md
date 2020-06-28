@@ -11,5 +11,6 @@ assignees: macintacos
 
 - [ ] Create a new branch: `git checkout -b GH-<this_issue_number>`
 - [ ] Run the following script (fill out the relevant information, edit the CHANGELOG so that it's appropriate): `yarn run release`
-- [ ] After pushing, create a PR opened against `master` (not `develop`). It should have the same naming convention. Merge that PR.
-- [ ] Switch to `develop` and `git rebase` the changes from `master` before resuming normal development
+- [ ] After pushing, create a PR opened against `develop`. It should have the same naming convention. Squash/merge that PR as normal.
+- [ ] Open a PR from `develop` -> `master`. Perform a _rebase_ merge, **not a squash merge**.
+- [ ] Close this issue once all of the above is completed.
