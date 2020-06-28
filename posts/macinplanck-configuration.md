@@ -7,6 +7,7 @@ tags:
   - keyboards
 layout: layouts/post.njk
 ---
+
 - [Links and Resources](#links-and-resources)
 - [Layers](#layers)
   - [The `Base` Layer](#the-base-layer)
