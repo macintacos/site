@@ -1,6 +1,6 @@
 {
   "name": "macintacos_site",
-  "version": "5.0.2",
+  "version": "0.0.1",
   "description": "The website for macintacos.com",
   "scripts": {
     "build": "eleventy",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/macintacos/site"
   },
   "author": {
     "name": "Julian Torres",
-    "email": "julian.m.tor@gmail.com",
+    "email": "juliantorres@hey.com",
     "url": "https://macintacos.com/"
   },
   "license": "MIT",
