@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom Styling */
+@import "./prism-dracula";
+
+/* FontAwesomeIcon */
+.font-awesome-brand-icon svg {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 4px;
+  display: inline-block;
+}
