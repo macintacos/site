@@ -33,5 +33,13 @@
     "markdown-it-anchor": "^5.2.5",
     "release-it": "*",
     "uslug": "1.0.4"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "release": false
+    }
   }
 }
