@@ -1,9 +1,10 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: '🐛 bug_title'
-labels: '📨 Needs Triage'
-assignees: 'macintacos'
+title: "\U0001F41B bug_title"
+labels: "\U0001F4E8 Needs Triage"
+assignees: macintacos
+
 ---
 
 ## Describe the bug

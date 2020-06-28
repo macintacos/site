@@ -2,8 +2,9 @@
 name: Propose a change
 about: Suggest an idea/change for this project
 title: "⚡️ change_title"
-labels: '📨 Needs Triage'
-assignees: 'macintacos'
+labels: "\U0001F4E8 Needs Triage"
+assignees: macintacos
+
 ---
 
 ## Idea
