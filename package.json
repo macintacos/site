@@ -6,7 +6,8 @@
     "build": "eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "debug": "DEBUG=* eleventy",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
+    "release-it": "*",
     "uslug": "1.0.4"
   }
 }
