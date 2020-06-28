@@ -1,6 +1,6 @@
 {
   "name": "macintacos_site",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The website for macintacos.com",
   "scripts": {
     "build": "eleventy",
