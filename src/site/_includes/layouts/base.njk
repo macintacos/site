@@ -15,9 +15,9 @@
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </div>
 
-        <ul class="flex text-lg divide-x-2 divide-gray-700 text-bold">
+        <ul class="flex px-6 text-lg divide-x-2 divide-gray-700 text-bold">
           {%- for entry in collections.all | eleventyNavigation %}
-            <li class="px-3 py my mx hover:line-through">
+            <li class="pl-5 py my hover:line-through">
               {% if entry.url == page.url %}
                 <a class="text-gray-300" href="{{ entry.url | url }}">{{ entry.title }}</a>
               {% else %}
@@ -39,7 +39,7 @@
       </main>
 
       <footer class="absolute bottom-0 w-full pt-8 text-center text-white bg-black"
-              style="height: 40px; box-shadow: 0 50vh 0 50vh #000">
+              style="height: 60px; box-shadow: 0 50vh 0 50vh #000">
         <a href="mailto:julian.m.tor@gmail.com">
           {% FontAwesomeIcon
             name = "internet-explorer",
