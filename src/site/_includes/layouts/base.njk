@@ -1,37 +1,63 @@
 <!doctype html>
-<html lang="en">
+<html class="min-h-full p-0 m-0" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/style/build/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/style/build/font-awesome/all.min.css' | url }}">
     <link rel="stylesheet" href="{{ '/style/build/prism-dracula.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
-  <body>
-    <header class="flex border-b-2 border-gray-400 border-dashed">
-      <h1 class="my-4 ml-4 mr-8 text-lg font-bold line-through">
-        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-      </h1>
+  <body class="min-h-full p-0 m-0">
+    <div id="container" class="relative min-h-full">
+      <header class="flex flex-wrap items-baseline bg-black">
+        <h1 class="flex justify-between flex-1 my-4 ml-4 mr-8 text-xl font-bold text-gray-200 line-through">
+          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        </h1>
 
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="flex">
-        {%- for entry in collections.all | eleventyNavigation %}
-          <li class="my-4 mr-3">
-            <a class="text-lg {% if entry.url == page.url %} font-bold {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-      </ul>
-    </header>
+        <ul class="flex divide-gray-700 divide-x-">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="px-3 py my mx">
+              {% if entry.url == page.url %}
+                <a class="text-gray-200" href="{{ entry.url | url }}">{{ entry.title }}</a>
+              {% else %}
+                <a class="text-gray-600" href="{{ entry.url | url }}">{{ entry.title }}</a>
+              {% endif %}
+            </li>
+          {%- endfor %}
+        </ul>
+      </header>
 
-    <main{% if templateClass %} class="ml-40 mt-16 {{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
+      <main id="body" {% if templateClass %} class="mx-5 md:mx-20 lg:mx-40
+        my-10 md:my-12 lg:my-16
+        max-w-2xl
+        {{ templateClass }}"
+        style="padding-bottom: 120px;"
+      {% endif %}>
+        {{ content | safe }}
+      </main>
 
-    <footer></footer>
+      <footer class="absolute bottom-0 w-full pt-8 text-center text-white bg-black"
+              style="height: 60px; box-shadow: 0 50vh 0 50vh #000">
+        <a href="mailto:julian.m.tor@gmail.com">{% FontAwesomeIcon
+          name = "internet-explorer",
+          type = "brand",
+          class = "px-4 text-blue-400 font-awesome-brand-icon"
+        %}</a>
+        <a href="https://github.com/macintacos">{% FontAwesomeIcon
+          name = "github-alt",
+          type = "brand",
+          class = "px-4 font-awesome-brand-icon"
+        %}</a>
+        <a href="https://twitter.com/macintacos">{% FontAwesomeIcon
+          name = "twitter",
+          type = "brand",
+          class = "px-4 text-blue-400 font-awesome-brand-icon"
+        %}</a>
+      </footer>
 
-    {# Current page: {{ page.url | url }} #}
+      {# Current page: {{ page.url | url }} #}
+    </div>
   </body>
 </html>

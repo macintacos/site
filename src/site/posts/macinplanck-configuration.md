@@ -1,10 +1,10 @@
 ---
 title: The macinplanck Config
-description: This is what happens when someone who has too much time on their hands gets a shiny new keyboard
+description: Shiny keyboards = fun time-sinks.
 date: 2020-01-01
 tags:
-  - qmk
   - keyboards
+  - qmk
 layout: layouts/post.njk
 ---
 

@@ -5,12 +5,25 @@
 /* Custom Styling */
 @import "./prism-dracula";
 
+/* Header hax*/
+/* header > ul > li > a {
+  color: red !important;
+  float: right;
+  text-align: right;
+} */
+
 /* FontAwesomeIcon */
 .font-awesome-brand-icon svg {
   width: 20px;
   height: 20px;
   padding-bottom: 4px;
   display: inline-block;
+}
+
+footer .font-awesome-brand-icon svg {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 /* postlist styling */

@@ -6295,14 +6295,6 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss-interaction-variants@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-4.0.0.tgz#3ec0e4323c2207ee6f84b2427bc99880990994e1"
-  integrity sha512-0jvrD1Be63L/H357DrFDnAF9yzRy1aVYbXFCeU4axitWdoefjLctxhl6BuKdjP1hKULDB8H35JUuUA/0mEgglQ==
-  dependencies:
-    lodash "^4.17.15"
-    postcss-selector-parser "^6.0.2"
-
 tailwindcss@1.4.6:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.4.6.tgz#17b37166ccda08d7e7f9ca995ea48ce1e0089700"
