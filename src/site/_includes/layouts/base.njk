@@ -16,7 +16,7 @@
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </h1>
 
-        <ul class="flex divide-gray-700 divide-x-">
+        <ul class="flex divide-x-2 divide-gray-700">
           {%- for entry in collections.all | eleventyNavigation %}
             <li class="px-3 py my mx">
               {% if entry.url == page.url %}
