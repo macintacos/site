@@ -3,7 +3,6 @@
 @import "tailwindcss/utilities";
 
 /* FontAwesomeIcon */
-
 footer .font-awesome-brand-icon svg {
   @apply inline-block;
   @apply text-xl;
@@ -14,31 +13,96 @@ footer .font-awesome-brand-icon svg {
   @apply transition;
   @apply duration-300;
   @apply ease-in-out;
-}
 
-footer .font-awesome-brand-icon svg:hover {
-  @apply bg-gray-800;
-  @apply rounded-md;
-  @apply transition;
-  @apply duration-300;
-  @apply ease-in-out;
+  &:hover {
+    @apply bg-gray-800;
+    @apply rounded-md;
+    @apply transition;
+    @apply duration-300;
+    @apply ease-in-out;
+  }
 }
 
 /* postlist styling */
 .postlist-item {
   counter-increment: start-from -1;
-}
 
-.postlist-item:before {
-  @apply inline-block;
-  @apply pointer-events-none;
-  @apply text-right;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
+  /* Currentl stage-1 proposal, might change! */
+  &:before {
+    @apply inline-block;
+    @apply pointer-events-none;
+    @apply text-right;
+    content: "" counter(start-from, decimal-leading-zero) ". ";
+    line-height: 100%;
+  }
 }
 
 .postlist-date,
 .postlist-item:before {
   @apply text-sm;
   @apply text-gray-900;
+}
+
+/* General Post Styling */
+ul > li {
+  @apply ml-6;
+  @apply list-disc;
+  @apply list-outside;
+  @apply leading-7;
+
+  & a {
+    @apply text-blue-600;
+
+    &:hover {
+      @apply line-through;
+    }
+  }
+
+  & ul > li {
+    @apply list-outside;
+    @apply list-circle;
+    @apply ml-8;
+  }
+}
+
+p {
+  @apply my-6;
+  @apply leading-7;
+
+  & a {
+    @apply text-blue-600;
+
+    &:hover {
+      @apply line-through;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply pt-8;
+}
+
+h2 {
+  @apply text-3xl;
+  @apply font-bold;
+
+  & a {
+    @apply text-lg;
+    @apply text-gray-400;
+  }
+}
+
+h3 {
+  @apply text-2xl;
+  @apply font-bold;
+
+  & a {
+    @apply text-lg;
+    @apply text-gray-400;
+  }
 }

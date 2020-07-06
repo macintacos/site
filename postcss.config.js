@@ -6,5 +6,11 @@ module.exports = {
     require("postcss-import"),
     require("tailwindcss"),
     require("autoprefixer"),
+    require("postcss-preset-env")({
+      stage: 2,
+      features: {
+        "nesting-rules": true,
+      },
+    }),
   ],
 };
