@@ -5,25 +5,26 @@
 /* Custom Styling */
 @import "./prism-dracula";
 
-/* Header hax*/
-/* header > ul > li > a {
-  color: red !important;
-  float: right;
-  text-align: right;
-} */
-
 /* FontAwesomeIcon */
-.font-awesome-brand-icon svg {
-  width: 20px;
-  height: 20px;
-  padding-bottom: 4px;
-  display: inline-block;
-}
 
 footer .font-awesome-brand-icon svg {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
+  @apply inline-block;
+  @apply text-xl;
+  @apply w-12;
+  @apply h-12;
+  @apply p-2;
+  @apply rounded-md;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+}
+
+footer .font-awesome-brand-icon svg:hover {
+  @apply bg-gray-800;
+  @apply rounded-md;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
 }
 
 /* postlist styling */
@@ -32,15 +33,15 @@ footer .font-awesome-brand-icon svg {
 }
 
 .postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
+  @apply inline-block;
+  @apply pointer-events-none;
+  @apply text-right;
   content: "" counter(start-from, decimal-leading-zero) ". ";
   line-height: 100%;
-  text-align: right;
 }
 
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
-  color: var(--postlist-text-color);
+  @apply text-sm;
+  @apply text-gray-900;
 }

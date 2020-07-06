@@ -11,16 +11,16 @@
   </head>
   <body class="min-h-full p-0 m-0">
     <div id="container" class="relative min-h-full">
-      <header class="flex flex-wrap items-baseline bg-black">
-        <h1 class="flex justify-between flex-1 my-4 ml-4 mr-8 text-xl font-bold text-gray-200 line-through">
+      <header class="flex flex-wrap items-baseline bg-black md:items-center">
+        <div class="flex justify-between flex-1 my-4 ml-4 mr-8 text-3xl font-bold text-gray-200 line-through hover:no-underline">
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-        </h1>
+        </div>
 
-        <ul class="flex divide-x-2 divide-gray-700">
+        <ul class="flex text-lg divide-x-2 divide-gray-700 text-bold">
           {%- for entry in collections.all | eleventyNavigation %}
-            <li class="px-3 py my mx">
+            <li class="px-3 py my mx hover:line-through">
               {% if entry.url == page.url %}
-                <a class="text-gray-200" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                <a class="text-gray-300" href="{{ entry.url | url }}">{{ entry.title }}</a>
               {% else %}
                 <a class="text-gray-600" href="{{ entry.url | url }}">{{ entry.title }}</a>
               {% endif %}
@@ -32,6 +32,7 @@
       <main id="body" {% if templateClass %} class="mx-5 md:mx-20 lg:mx-40
         my-10 md:my-12 lg:my-16
         max-w-2xl
+        bg-grey-100
         {{ templateClass }}"
         style="padding-bottom: 120px;"
       {% endif %}>
@@ -39,22 +40,28 @@
       </main>
 
       <footer class="absolute bottom-0 w-full pt-8 text-center text-white bg-black"
-              style="height: 60px; box-shadow: 0 50vh 0 50vh #000">
-        <a href="mailto:julian.m.tor@gmail.com">{% FontAwesomeIcon
-          name = "internet-explorer",
-          type = "brand",
-          class = "px-4 text-blue-400 font-awesome-brand-icon"
-        %}</a>
-        <a href="https://github.com/macintacos">{% FontAwesomeIcon
-          name = "github-alt",
-          type = "brand",
-          class = "px-4 font-awesome-brand-icon"
-        %}</a>
-        <a href="https://twitter.com/macintacos">{% FontAwesomeIcon
-          name = "twitter",
-          type = "brand",
-          class = "px-4 text-blue-400 font-awesome-brand-icon"
-        %}</a>
+              style="height: 40px; box-shadow: 0 50vh 0 50vh #000">
+        <a href="mailto:julian.m.tor@gmail.com">
+          {% FontAwesomeIcon
+            name = "internet-explorer",
+            type = "brand",
+            class = "px-4 text-blue-400 font-awesome-brand-icon"
+          %}
+        </a>
+        <a href="https://github.com/macintacos">
+          {% FontAwesomeIcon
+            name = "github-alt",
+            type = "brand",
+            class = "px-4 font-awesome-brand-icon"
+          %}
+        </a>
+        <a href="https://twitter.com/macintacos">
+          {% FontAwesomeIcon
+            name = "twitter",
+            type = "brand",
+            class = "px-4 text-blue-400 font-awesome-brand-icon"
+          %}
+        </a>
       </footer>
 
       {# Current page: {{ page.url | url }} #}
