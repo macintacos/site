@@ -10,7 +10,7 @@
   </head>
   <body class="min-h-full p-0 m-0">
     <div id="container" class="relative min-h-full">
-      <header class="flex flex-wrap items-baseline bg-black md:items-center ">
+      <header class="flex flex-wrap items-baseline bg-black md:items-center">
         <div class="flex justify-between flex-1 my-2 ml-4 text-3xl font-bold text-gray-200 line-through">
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </div>
@@ -28,12 +28,13 @@
         </ul>
       </header>
 
-      <main id="body" {% if templateClass %} class="mx-5 md:mx-20 lg:mx-40
-        my-10 md:my-12 lg:my-16
-        max-w-2xl
-        bg-grey-100
-        {{ templateClass }}"
-        style="padding-bottom: 120px;"
+      <main id="body" {% if templateClass %}
+            style="padding-bottom: 120px;"
+            class="mx-6 sm:mx-20 xl:mx-64
+                   my-0 sm:my-12
+                   max-w-2xl
+                   bg-grey-100
+                   {{ templateClass }}"
       {% endif %}>
         {{ content | safe }}
       </main>

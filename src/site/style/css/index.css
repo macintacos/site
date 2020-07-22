@@ -5,6 +5,15 @@
 
 @import "./prism-atom-dark";
 
+/* Fonts */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
 /* FontAwesomeIcon */
 footer .font-awesome-brand-icon svg {
   @apply inline-block;
@@ -35,6 +44,8 @@ footer .font-awesome-brand-icon svg {
     @apply inline-block;
     @apply pointer-events-none;
     @apply text-right;
+    @apply relative;
+    @apply -ml-8;
     content: "" counter(start-from, decimal-leading-zero) ". ";
     line-height: 100%;
   }
@@ -44,6 +55,7 @@ footer .font-awesome-brand-icon svg {
 .postlist-item:before {
   @apply text-sm;
   @apply text-gray-900;
+  font-family: "JetBrains Mono" monospace;
 }
 
 /* General Post Styling */

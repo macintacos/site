@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: About Me
 templateClass: tmpl-post
+date: 1992-04-25
 eleventyNavigation:
   key: 👋🏼
   order: 3
