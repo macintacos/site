@@ -14,6 +14,11 @@
   font-display: swap;
 }
 
+code,
+pre {
+  font-family: "JetBrains Mono" monospace;
+}
+
 /* FontAwesomeIcon */
 footer .font-awesome-brand-icon svg {
   @apply inline-block;

@@ -28,18 +28,15 @@
         </ul>
       </header>
 
-      <main id="body" {% if templateClass %}
+      <main id="body"
+        {% if templateClass %}
             style="padding-bottom: 120px;"
-            class="mx-6 sm:mx-20 xl:mx-64
-                   my-0 sm:my-12
-                   max-w-2xl
-                   bg-grey-100
-                   {{ templateClass }}"
-      {% endif %}>
+            class="mx-6 sm:m-auto my-0 max-w-3xl bg-grey-100 {{ templateClass }}"
+        {% endif %}>
         {{ content | safe }}
       </main>
 
-      <footer class="absolute bottom-0 w-full pt-8 text-center text-white bg-black"
+      <footer class="absolute bottom-0 w-full pt-8 pb-20 text-center text-white bg-black"
               style="height: 60px; box-shadow: 0 50vh 0 50vh #000">
         <a href="mailto:julian.m.tor@gmail.com">
           {% FontAwesomeIcon
