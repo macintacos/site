@@ -1,6 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "tailwindcss/screens";
+
+@import "./prism-atom-dark";
 
 /* FontAwesomeIcon */
 footer .font-awesome-brand-icon svg {
@@ -104,5 +107,24 @@ h3 {
   & a {
     @apply text-lg;
     @apply text-gray-400;
+  }
+}
+
+/* TODO: Don't know why I can't get the code blocks to span the width of the screen in the
+small sizes */
+pre[class*="language-"] {
+  @apply w-screen;
+  @apply rounded-lg;
+}
+
+@screen sm {
+  pre[class*="language-"] {
+    @apply -mx-5;
+  }
+}
+
+@screen md {
+  pre[class*="language-"] {
+    @apply -mx-10;
   }
 }
