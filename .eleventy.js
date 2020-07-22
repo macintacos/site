@@ -7,10 +7,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginErrorOverlay = require("eleventy-plugin-error-overlay");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const uslug = require("uslug");
-const uslugify = (s) => uslug(s);
+const markdownItLibrary = require("./src/eleventyConfig/markdownItLibrary.js");
 
 module.exports = function (eleventyConfig) {
   // Plugins {{{
@@ -53,17 +50,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/img");
   eleventyConfig.addPassthroughCopy("./src/site/style/build");
 
-  // Markdown Overrides
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
-    slugify: uslugify,
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
+  eleventyConfig.setLibrary("md", markdownItLibrary);
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
