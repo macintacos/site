@@ -47,7 +47,8 @@ module.exports = function (eleventyConfig) {
     require("./src/site/_11ty/getTagList")
   );
 
-  eleventyConfig.addPassthroughCopy("./src/site/img");
+  eleventyConfig.addPassthroughCopy("./src/site/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/site/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/site/style/build");
 
   eleventyConfig.setLibrary("md", markdownItLibrary);
