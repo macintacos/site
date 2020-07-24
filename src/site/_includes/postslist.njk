@@ -1,4 +1,4 @@
-<ol reversed class="m-8 list-outside postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+<ol reversed class="mt-6 list-none postlist">
   {% for post in postslist | reverse %}
     <time class="block mt-1 leading-normal sm:mt-0 sm:inline postlist-date" {% if post.date %}datetime="{{ post.date | htmlDateString }}{% endif %}">
       {% if post.date %}
@@ -20,6 +20,7 @@
           {{ post.data.description }}
         </div>
       {% endif %}
+
       <div class="block pb-4 -ml-1">
         {% for tag in post.data.tags %}
           {%- if collections.tagList.indexOf(tag) != -1 -%}

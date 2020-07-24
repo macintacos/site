@@ -42,16 +42,12 @@ footer .font-awesome-brand-icon svg {
 
 /* postlist styling */
 .postlist-item {
-  counter-increment: start-from -1;
-
   /* Currentl stage-1 proposal, might change! */
   &:before {
     @apply inline-block;
     @apply pointer-events-none;
     @apply text-right;
     @apply relative;
-    @apply -ml-8;
-    content: "" counter(start-from, decimal-leading-zero) ". ";
     line-height: 100%;
   }
 }
