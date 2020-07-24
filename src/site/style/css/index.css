@@ -1,14 +1,29 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "tailwindcss/screens";
 
 /* Custom Styling */
-@import "./prism-dracula";
+@import "./font-awesome";
+@import "./prism-atom-dark";
+@import "./layout-general";
+@import "./layout-postlist";
 
-/* FontAwesomeIcon */
-.font-awesome-brand-icon svg {
-  width: 20px;
-  height: 20px;
-  padding-bottom: 4px;
-  display: inline-block;
+/* Fonts */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+code,
+pre,
+code[class*="language-"],
+pre[class*="language-"],
+.postlist-date,
+.postlist-item:before {
+  font-family: "JetBrains Mono" Inconsolata, Monaco, Consolas, "Courier New",
+    Courier, monospace;
 }

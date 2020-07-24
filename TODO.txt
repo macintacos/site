@@ -1,0 +1,2 @@
+TODO: See if you can find a more minimal code block styling (maybe look to see what Tailwind's website is using?)
+TODO: Work on the post's rendering; this will likely take up most of the design work.
