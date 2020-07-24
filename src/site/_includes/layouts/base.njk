@@ -11,7 +11,7 @@
   <body class="min-h-full p-0 m-0">
     <div id="container" class="relative min-h-full">
       <header class="flex flex-wrap items-baseline bg-black md:items-center">
-        <div class="flex justify-between flex-1 my-2 ml-4 text-3xl font-bold text-gray-200 line-through">
+        <div class="flex justify-between flex-1 my-2 ml-4 text-3xl font-bold text-gray-200 line-through hover:no-underline">
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </div>
 
@@ -31,7 +31,7 @@
       <main id="body"
         {% if templateClass %}
             style="padding-bottom: 120px;"
-            class="mx-6 sm:m-auto my-0 max-w-3xl bg-grey-100 {{ templateClass }}"
+            class="ml-4 sm:m-auto my-0 max-w-3xl bg-grey-100 {{ templateClass }}"
         {% endif %}>
         {{ content | safe }}
       </main>

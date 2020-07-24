@@ -1,5 +1,11 @@
-<ol reversed class="m-4 list-outside postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+<ol reversed class="m-8 list-outside postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
   {% for post in postslist | reverse %}
+    <time class="block mt-1 leading-normal sm:mt-0 sm:inline postlist-date" {% if post.date %}datetime="{{ post.date | htmlDateString }}{% endif %}">
+      {% if post.date %}
+        {{ post.date | readableDate }}
+      {% endif %}
+    </time>
+
     <li class="mb-4 last:mb-0 postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
       <a href="{{ post.url | url }}" class="text-xl font-bold leading-tight postlist-link hover:line-through">
         {% if post.data.title %}
@@ -8,18 +14,12 @@
           <code>{{ post.url }}</code>
         {% endif %}
       </a>
-      <time class="block mt-3 leading-normal sm:ml-2 sm:mt-0 sm:inline postlist-date" {% if post.date %}datetime="{{ post.date | htmlDateString }}{% endif %}">
-        {% if post.date %}
-          {{ post.date | readableDate }}
-        {% endif %}
-      </time>
 
       {% if post.data.description %}
-        <div class="block pb-3 leading-normal sm:mt-3">
+        <div class="block pb-3 mt-3 leading-normal">
           {{ post.data.description }}
         </div>
       {% endif %}
-
       <div class="block pb-4 -ml-1">
         {% for tag in post.data.tags %}
           {%- if collections.tagList.indexOf(tag) != -1 -%}
