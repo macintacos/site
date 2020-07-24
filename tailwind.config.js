@@ -1,5 +1,7 @@
 module.exports = {
-  purge: { content: ["./templates/**/*.njk"] },
+  purge: {
+    content: ["./src/**/*.njk"],
+  },
   theme: {
     extend: {},
     inset: {
