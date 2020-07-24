@@ -1,6 +1,7 @@
 const mdIt = require("markdown-it");
 const mdAnchorPlugin = require("markdown-it-anchor");
 const mdFootnotePlugin = require("markdown-it-footnote");
+const mdEmojiPlugin = require("markdown-it-emoji");
 const uslug = require("uslug");
 const uslugify = (s) => uslug(s);
 
@@ -14,7 +15,8 @@ let markdownLibrary = mdIt({
     permalinkSymbol: "#",
     slugify: uslugify,
   })
-  .use(mdFootnotePlugin);
+  .use(mdFootnotePlugin)
+  .use(mdEmojiPlugin);
 
 let mdRenderer = markdownLibrary.renderer;
 
