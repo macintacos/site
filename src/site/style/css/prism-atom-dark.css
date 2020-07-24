@@ -4,18 +4,32 @@
  * @author Joe Gibson (@gibsjose)
  */
 
+/* Space Styling */
+pre[class*="language-"] {
+  @apply p-6;
+  @apply overflow-auto;
+  margin-left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+}
+
+@screen sm {
+  pre[class*="language-"] {
+    @apply rounded-lg;
+    @apply max-w-3xl;
+  }
+}
+
+@screen md {
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #c5c8c6;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: "JetBrains Mono" Inconsolata, Monaco, Consolas, "Courier New",
-    Courier, monospace;
-  direction: ltr;
-  text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  line-height: 1.5;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -28,23 +42,13 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-}
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #1d1f21;
+  background: #24292d;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-}
-
 .token.comment,
 .token.prolog,
 .token.doctype,

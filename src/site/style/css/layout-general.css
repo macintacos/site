@@ -1,0 +1,76 @@
+/* General Styling */
+ul > li {
+  @apply ml-6;
+  @apply list-disc;
+  @apply list-outside;
+  @apply leading-6;
+  @apply py-1;
+
+  & a {
+    @apply text-blue-600;
+
+    &:hover {
+      @apply line-through;
+    }
+  }
+
+  & ul > li {
+    @apply list-outside;
+    @apply list-circle;
+    @apply ml-8;
+  }
+}
+
+p {
+  @apply my-6;
+  @apply leading-7;
+
+  & a {
+    @apply text-blue-600;
+
+    &:hover {
+      @apply line-through;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply pt-8;
+}
+
+h2 {
+  @apply text-3xl;
+  @apply font-bold;
+
+  & a {
+    @apply text-lg;
+    @apply text-gray-400;
+  }
+}
+
+h3 {
+  @apply text-2xl;
+  @apply font-bold;
+
+  & a {
+    @apply text-lg;
+    @apply text-gray-400;
+  }
+}
+
+img {
+  margin-left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+}
+
+@screen sm {
+  img {
+    @apply max-w-3xl;
+  }
+}

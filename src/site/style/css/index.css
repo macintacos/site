@@ -3,7 +3,11 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/screens";
 
+/* Custom Styling */
+@import "./font-awesome";
 @import "./prism-atom-dark";
+@import "./layout-general";
+@import "./layout-postlist";
 
 /* Fonts */
 @font-face {
@@ -15,129 +19,11 @@
 }
 
 code,
-pre {
-  font-family: "JetBrains Mono" monospace;
-}
-
-/* FontAwesomeIcon */
-footer .font-awesome-brand-icon svg {
-  @apply inline-block;
-  @apply text-xl;
-  @apply w-12;
-  @apply h-12;
-  @apply p-2;
-  @apply rounded-md;
-  @apply transition;
-  @apply duration-300;
-  @apply ease-in-out;
-
-  &:hover {
-    @apply bg-gray-800;
-    @apply rounded-md;
-    @apply transition;
-    @apply duration-300;
-    @apply ease-in-out;
-  }
-}
-
-/* postlist styling */
-.postlist-item {
-  /* Currentl stage-1 proposal, might change! */
-  &:before {
-    @apply inline-block;
-    @apply pointer-events-none;
-    @apply text-right;
-    @apply relative;
-    line-height: 100%;
-  }
-}
-
+pre,
+code[class*="language-"],
+pre[class*="language-"],
 .postlist-date,
 .postlist-item:before {
-  @apply text-sm;
-  @apply text-gray-900;
-  font-family: "JetBrains Mono" monospace;
-}
-
-/* General Post Styling */
-ul > li {
-  @apply ml-6;
-  @apply list-disc;
-  @apply list-outside;
-  @apply leading-7;
-
-  & a {
-    @apply text-blue-600;
-
-    &:hover {
-      @apply line-through;
-    }
-  }
-
-  & ul > li {
-    @apply list-outside;
-    @apply list-circle;
-    @apply ml-8;
-  }
-}
-
-p {
-  @apply my-6;
-  @apply leading-7;
-
-  & a {
-    @apply text-blue-600;
-
-    &:hover {
-      @apply line-through;
-    }
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply pt-8;
-}
-
-h2 {
-  @apply text-3xl;
-  @apply font-bold;
-
-  & a {
-    @apply text-lg;
-    @apply text-gray-400;
-  }
-}
-
-h3 {
-  @apply text-2xl;
-  @apply font-bold;
-
-  & a {
-    @apply text-lg;
-    @apply text-gray-400;
-  }
-}
-
-/* TODO: Don't know why I can't get the code blocks to span the width of the screen in the
-small sizes */
-pre[class*="language-"] {
-  @apply w-screen;
-  @apply rounded-lg;
-}
-
-@screen sm {
-  pre[class*="language-"] {
-    @apply -mx-5;
-  }
-}
-
-@screen md {
-  pre[class*="language-"] {
-    @apply -mx-10;
-  }
+  font-family: "JetBrains Mono" Inconsolata, Monaco, Consolas, "Courier New",
+    Courier, monospace;
 }

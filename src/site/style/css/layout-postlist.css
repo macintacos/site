@@ -1,0 +1,17 @@
+/* Postlist Related Styling */
+.postlist-item {
+  /* Currently stage-1 proposal, might change! */
+  &:before {
+    @apply inline-block;
+    @apply pointer-events-none;
+    @apply text-right;
+    @apply relative;
+    line-height: 100%;
+  }
+}
+
+.postlist-date,
+.postlist-item:before {
+  @apply text-sm;
+  @apply text-gray-900;
+}
