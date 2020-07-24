@@ -9,9 +9,7 @@ assignees: macintacos
 
 ## Tasks
 
-## Tasks
-
-- [ ] Create a new branch: `git checkout -b GH-<this_issue_number> && git push --set-upstream origin GH<this_issue_number>`
+- [ ] Create a new branch: `git checkout -b GH-<this_issue_number> && git push --set-upstream origin GH-<this_issue_number>`
 - [ ] Run the following script (fill out the relevant information, edit the CHANGELOG so that it's appropriate): `yarn run release`
 - [ ] After pushing, create a PR opened against `develop`. It should have the same naming convention. Squash/merge that PR as normal.
 - [ ] In your local repo, do the following:
