@@ -10,20 +10,12 @@
 @import "./layout-postlist";
 
 /* Fonts */
-@font-face {
-  font-family: "JetBrains Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
 code,
 pre,
 code[class*="language-"],
 pre[class*="language-"],
 .postlist-date,
 .postlist-item:before {
-  font-family: "JetBrains Mono" Inconsolata, Monaco, Consolas, "Courier New",
+  font-family: SFMono-Regular, Inconsolata, Monaco, Consolas, "Courier New",
     Courier, monospace;
 }
