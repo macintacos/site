@@ -1,6 +1,6 @@
 {
   "name": "macintacos_site",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "The website for macintacos.com",
   "scripts": {
     "build": "npm-run-all build:css build:html",
