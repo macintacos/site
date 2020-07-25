@@ -1,4 +1,9 @@
 /* General Styling */
+a > code {
+  @apply text-blue-700;
+  @apply bg-blue-100;
+}
+
 ul > li {
   @apply ml-6;
   @apply list-disc;
@@ -7,7 +12,7 @@ ul > li {
   @apply py-1;
 
   & a {
-    @apply text-blue-600;
+    @apply text-blue-700;
 
     &:hover {
       @apply line-through;
@@ -26,7 +31,7 @@ p {
   @apply leading-7;
 
   & a {
-    @apply text-blue-600;
+    @apply text-blue-700;
 
     &:hover {
       @apply line-through;
