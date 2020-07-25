@@ -48,7 +48,6 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addPassthroughCopy("./src/site/assets/img");
-  eleventyConfig.addPassthroughCopy("./src/site/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/site/style/build");
 
   eleventyConfig.setLibrary("md", markdownItLibrary);
