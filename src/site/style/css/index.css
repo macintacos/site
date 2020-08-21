@@ -10,15 +10,22 @@
 @import "./layout-postlist";
 
 /* Fonts */
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
   font-family: Inter, system-ui, ui-snas-serf, sans-serif;
 }
 
 code,
 pre,
+blob-code,
 code[class*="language-"],
 pre[class*="language-"],
 .postlist-date,
 .postlist-item:before {
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, monospace;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, monospace !important;
 }
