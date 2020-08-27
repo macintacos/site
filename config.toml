@@ -11,5 +11,8 @@ main = [
 ]
 
 [params]
-layoutReverse = true
 themeColor = "theme-base-08"
+
+[markup]
+    [markup.highlight]
+        style = "dracula"
