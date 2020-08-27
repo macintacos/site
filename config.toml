@@ -1,0 +1,15 @@
+baseURL = "http://jmt.dev/"
+languageCode = "en-us"
+title = "jmt.dev"
+theme = "hyde"
+
+[Menus]
+main = [
+    { Name = "Github", URL = "https://github.com/macintacos" },
+    { Name = "Twitter", URL = "https://twitter.com/macintacos" },
+    { Name = "Email", URL = "mailto:juliantorres@hey.com" }
+]
+
+[params]
+layoutReverse = true
+themeColor = "theme-base-08"
