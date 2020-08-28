@@ -155,7 +155,8 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, monospace;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+    Monaco, monospace;
 }
 code {
   padding: 0.25em 0.5em;
