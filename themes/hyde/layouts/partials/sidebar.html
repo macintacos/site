@@ -6,38 +6,32 @@
       </a>
       <p class="lead">
         {{ with .Site.Params.description }}
- {{ . }}
- {{ else }}
- thoughts,
-        findings, &amp; projects by
-        <a href="http://github.com/macintacos">@macintacos</a>.{{ end }}
-
+          {{ . }}
+        {{ else }}
+          thoughts, findings, &amp; projects by <a href="http://github.com/macintacos">@macintacos</a>.
+        {{ end }}
       </p>
     </div>
 
     <nav>
       <ul class="sidebar-nav">
+
         {{ range .Site.Menus.main -}}
-
-        <li>
-          <a href="{{ .URL }}">
-            {{ if eq .Name "Github" }}
-
-            {{ partial "icons.html" "brands/github" }}
-
-            {{ else if eq .Name "Email" }}
- {{ partial "icons.html" "solid/at" }}
-
-            {{ else if eq .Name "Twitter" }}
-
-            {{ partial "icons.html" "brands/twitter" }}
- {{ end }}
-
-          </a>
-        </li>
+          <li>
+            <a href="{{ .URL }}">
+              {{ if eq .Name "Github" }}
+                {{ partial "icons.html" "brands/github"}}
+              {{ else if eq .Name "Email" }}
+                {{ partial "icons.html" "solid/at"}}
+              {{ else if eq .Name "Twitter" }}
+                {{partial "icons.html" "brands/twitter" }}
+              {{ end }}
+            </a>
+          </li>
         {{- end }}
 
       </ul>
     </nav>
+
   </div>
 </aside>

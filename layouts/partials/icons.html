@@ -1,9 +1,6 @@
 <span class="inline-svg" height="50%" width="50%">
   {{- $fname := print "static/icons/" . ".svg" -}}
- {{- $path := "<path" -}}
-
+  {{- $path := "<path" -}}
   {{- $fill := "<path fill=\"currentColor\"" -}}
-
   {{ replace (readFile $fname) $path $fill | safeHTML }}
-</span
->
+</span>
