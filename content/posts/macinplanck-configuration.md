@@ -6,15 +6,15 @@ summary = "Shiny keyboards = fun time-sinks."
 
 - [Links and Resources](#links-and-resources)
 - [Layers](#layers)
-    - [The `Base` Layer](#the-base-layer)
-    - [The `Lower` and `Raise` Layers](#the-lower-and-raise-layers)
-    - [The `Adjust` Layer](#the-adjust-layer)
-    - [The `NORMAL` Layer](#the-normal-layer)
-    - [The `VISUAL` Layer](#the-visual-layer)
-    - [The `NRMLSHIFT` Layer](#the-nrmlshift-layer)
-    - [The `WINDOWZ` Layer](#the-windowz-layer)
-    - [The `LGUI_ALL` Layer](#the-lgui_all-layer)
-    - [Special Mention: RGB Handling](#special-mention-rgb-handling)
+  - [The `Base` Layer](#the-base-layer)
+  - [The `Lower` and `Raise` Layers](#the-lower-and-raise-layers)
+  - [The `Adjust` Layer](#the-adjust-layer)
+  - [The `NORMAL` Layer](#the-normal-layer)
+  - [The `VISUAL` Layer](#the-visual-layer)
+  - [The `NRMLSHIFT` Layer](#the-nrmlshift-layer)
+  - [The `WINDOWZ` Layer](#the-windowz-layer)
+  - [The `LGUI_ALL` Layer](#the-lgui_all-layer)
+  - [Special Mention: RGB Handling](#special-mention-rgb-handling)
 - [Feedback (if anyone is listening)](#feedback-if-anyone-is-listening)
 - [What's next?](#whats-next)
 
@@ -40,7 +40,7 @@ Here are links to my current configuration:
 - [r/olkb](https://www.reddit.com/r/olkb/) (solved pretty much any issue I encountered in this keymap build by searching here)
 - [Wally](https://github.com/zsa/wally/releases) (and it's `wally-cli` counterpart) for easily flashing new firmware.
 
-If [history is any indication](/static/macinplanck-configuration/10-history.png), the configuration that I'm about to describe will probably be out of date by this time tomorrow, but I feel that writing down my thought process helps me pick out the holes in my logic and give me ideas for future improvements.
+If [history is any indication](/static/images/macinplanck-configuration/10-history.png), the configuration that I'm about to describe will probably be out of date by this time tomorrow, but I feel that writing down my thought process helps me pick out the holes in my logic and give me ideas for future improvements.
 
 But anyway, who cares? Onto those sweet, juicy layers to make sense of wtf I even did.
 
@@ -48,7 +48,7 @@ But anyway, who cares? Onto those sweet, juicy layers to make sense of wtf I eve
 
 I currently have 9 layers (`Lower`, `Base`, `Raise`, `Adjust`, `NORMAL`, `VISUAL`, `NRMLSHFT`, `WINDOWZ`, and `LGUI_ALL`):
 
-![9 layers](/static/macinplanck-configuration/9-layers.png)
+![9 layers](/static/images/macinplanck-configuration/9-layers.png)
 
 Not the biggest of drawbacks, but for whatever reason you cannot edit or delete the names in the first four layers. Removing the ability to delete them is understandable (otherwise it's kinda not a Planck), but the inability to rename them didn't really make sense to me. Oh well!
 
@@ -56,7 +56,7 @@ I'll be going through the `Base` layer first, just because that makes sense in m
 
 ### The `Base` Layer
 
-![base layer](/static/macinplanck-configuration/1-base.png)
+![base layer](/static/images/macinplanck-configuration/1-base.png)
 
 A lot of this layer is the same as the default config. QWERTY layout, `Lower`/`Raise` are in the same spot, etc. There are some distinguishing characteristics, though:
 
@@ -80,11 +80,11 @@ And that concludes our `Base` layer tour. Onwards!
 
 `Lower`:
 
-![lower layer](/static/macinplanck-configuration/0-lower.png)
+![lower layer](/static/images/macinplanck-configuration/0-lower.png)
 
 `Raise`:
 
-![raise layer](/static/macinplanck-configuration/2-raise.png)
+![raise layer](/static/images/macinplanck-configuration/2-raise.png)
 
 It helps to explain these both at the same time because there are a lot of similarities between the two, but with one key difference between the base config; the layers have essentially been swapped. When you look at a "traditional" keyboard, the number keys above the alphabetical characters have the number printed _underneath_ the symbols, so in my mind they are "lower" than the symbols. As such, the `Lower` layer maps to **numbers** (and other keys that you get without pressing "Shift" on a traditional keyboard) while the `Raise` layer maps to the **symbols** (and other keys that you get when pressing "shift" on a traditional keyboard). The Planck layout made more sense in my brain when I did that; your mileage may vary.
 
@@ -103,13 +103,13 @@ The rest of the layout should be fairly obvious, so I'm not going to enumerate a
 
 ### The `Adjust` Layer
 
-![adjust layer](/static/macinplanck-configuration/3-adjust.png)
+![adjust layer](/static/images/macinplanck-configuration/3-adjust.png)
 
 I have the least to say about this layer. Note that we have the same "escape hatch", but all other keys remain the same as the default configuration. If you have any ideas as to what else I should put here, please let me know!
 
 ### The `NORMAL` Layer
 
-![normal layer](/static/macinplanck-configuration/4-normal.png)
+![normal layer](/static/images/macinplanck-configuration/4-normal.png)
 
 You get to the `NORMAL` layer by tapping the QMK key at the bottom-left of the `Base` layer. This is where things get a bit more interesting, and where Vim's influence started getting the best of me.
 
@@ -159,7 +159,7 @@ Scroll down to the "Special Mention: RGB Handling" section to understand what th
 
 ### The `VISUAL` Layer
 
-![visual layer](/static/macinplanck-configuration/5-visual.png)
+![visual layer](/static/images/macinplanck-configuration/5-visual.png)
 
 The `VISUAL` layer is meant to be the layer that performs selection-based actions, similar to how `VISUAL` mode works in Vim. You get to it from the `NORMAL` layer by tapping `V`. The main draw of this layer is that you can perform large selections relatively quickly; it basically takes all of the text navigation shortcuts from the `NORMAL` layer and adds "Shift" to them.
 
@@ -201,7 +201,7 @@ Not much else going on here, so onto the next layer.
 
 ### The `NRMLSHIFT` Layer
 
-![nrmlshft layer](/static/macinplanck-configuration/6-nrmlshft.png)
+![nrmlshft layer](/static/images/macinplanck-configuration/6-nrmlshft.png)
 
 The `NRMLSHFT` layer is only accessible from the `NORMAL` layer and, as the name implies, it contains actions that are analogous to "shifted" keys in Vim's `NORMAL` mode (like `X` or `G`). I didn't do a whole lot of customization here, and there are probably some actions that I've missed; I'll slowly add more as I discover them.
 
@@ -230,11 +230,11 @@ The `NRMLSHFT` layer is only accessible from the `NORMAL` layer and, as the name
 
 ### The `WINDOWZ` Layer
 
-![windowz layer](/static/macinplanck-configuration/7-windowz.png)
+![windowz layer](/static/images/macinplanck-configuration/7-windowz.png)
 
 This layer doesn't make much sense to the casual onlooker, mostly because it is used exclusively for my window management tool on macOS: [Rectangle](https://github.com/rxhanson/Rectangle). I tile/move/resize my windows on macOS all day thanks to this tool. It's invaluable enough for me that I've dedicated an entire layer to it. The above keymap makes more sense when you see how the keyboard shortcuts for that application are set up on my machine:
 
-![rectangle keymap](/static/macinplanck-configuration/rectangle-keymap.png)
+![rectangle keymap](/static/images/macinplanck-configuration/rectangle-keymap.png)
 
 That's all there is to the `WINDOWZ` layer! [Here's the keymapping](https://gist.github.com/macintacos/3644540f41009cd56eeac0537d305fe9):
 
@@ -272,7 +272,7 @@ That's all there is to the `WINDOWZ` layer! [Here's the keymapping](https://gist
 
 ### The `LGUI_ALL` Layer
 
-![lgui_all layer](/static/macinplanck-configuration/8-lgui-all.png)
+![lgui_all layer](/static/images/macinplanck-configuration/8-lgui-all.png)
 
 This layer is an example of pure laziness on my part. The only reason why `LGUI_ALL` exists is because, when I was in the `NORMAL` or `VISUAL` layers, I occasionally found myself wanting to perform some kind of modifier + _"regular" key_ combination (almost always `cmd + something`), but then stay on the current layer. This is an incredibly brute-forced approach to handling that need, and is definitely something that I'll come back and revisit in the near future. For now, it works fine, so I'm not really worried. If you have any suggestions for an approach to this, I'm all ears!
 

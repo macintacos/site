@@ -51,8 +51,9 @@ html {
  */
 
 .sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
+  text-align: left;
+  padding: 1rem;
+  padding-top: 2rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #202020;
 }
@@ -70,6 +71,21 @@ html {
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+}
+.inline-svg svg {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+@media (min-width: 48em) {
+  .inline-svg svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5rem;
+  }
 }
 
 /* About section */
@@ -118,7 +134,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
