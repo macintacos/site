@@ -10,9 +10,6 @@ main = [
     { Name = "Twitter", URL = "https://twitter.com/macintacos" }
 ]
 
-[params]
-themeColor = "theme-base-08"
-
 [markup]
     [markup.highlight]
         style = "rrt"

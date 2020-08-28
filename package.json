@@ -1,0 +1,52 @@
+{
+  "author": {
+    "email": "juliantorres@hey.com",
+    "name": "Julian Torres",
+    "url": "https://macintacos.com/"
+  },
+  "description": "The website for jmt.dev/macintacos.com",
+  "devDependencies": {
+    "auto-changelog": "2.2.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "2.1.1",
+    "release-it": "^13.6.9"
+  },
+  "name": "jmt_dev_site",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/macintacos/site"
+  },
+  "release-it": {
+    "hooks": {
+      "after:bump": "npx auto-changelog -p"
+    },
+    "git": {
+      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
+      "commit": false,
+      "commitMessage": "🚀 Release ${version}",
+      "requireUpstream": false
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "RELEASE_IT_GITHUB_TOKEN"
+    },
+    "npm": {
+      "publish": false
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,md}": "prettier --write",
+    "*.{js,jsx}": "eslint --fix"
+  },
+  "scripts": {
+    "release": "release-it",
+    "watch": "hugo server --buildDrafts --bind $(ipconfig getifaddr en0) --baseURL http://$(ipconfig getifaddr en0)"
+  },
+  "version": "2.1.1"
+}
