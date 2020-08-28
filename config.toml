@@ -1,4 +1,4 @@
-baseURL = "http://jmt.dev/"
+baseURL = "https://jmt.dev/"
 languageCode = "en-us"
 title = "jmt.dev"
 theme = "hyde"
