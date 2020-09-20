@@ -4,20 +4,6 @@ date = "2020-01-01"
 summary = "Shiny keyboards = fun time-sinks."
 +++
 
-- [Links and Resources](#links-and-resources)
-- [Layers](#layers)
-  - [The `Base` Layer](#the-base-layer)
-  - [The `Lower` and `Raise` Layers](#the-lower-and-raise-layers)
-  - [The `Adjust` Layer](#the-adjust-layer)
-  - [The `NORMAL` Layer](#the-normal-layer)
-  - [The `VISUAL` Layer](#the-visual-layer)
-  - [The `NRMLSHIFT` Layer](#the-nrmlshift-layer)
-  - [The `WINDOWZ` Layer](#the-windowz-layer)
-  - [The `LGUI_ALL` Layer](#the-lgui_all-layer)
-  - [Special Mention: RGB Handling](#special-mention-rgb-handling)
-- [Feedback (if anyone is listening)](#feedback-if-anyone-is-listening)
-- [What's next?](#whats-next)
-
 As a Christmas gift to myself, I decided to get a new keyboard; a keyboard that I had scoffed at using not too long ago because "lol where's all the keys?". That keyboard is the [Planck EZ Glow](https://ergodox-ez.com/pages/planck). This post is to describe how I have it setup, not to give a whole backstory as to why I decided to get it (that's for me and my journal to know, thank you very much). I affectionately refer to my keyboard as the **macinplanck**.
 
 Some front-matter before I get into things:
@@ -119,41 +105,39 @@ An important thing to call out is that, although it's called `NORMAL`, this isn'
 
 [Here is the key mapping for the `NORMAL` layer as it stands now](https://gist.github.com/macintacos/7e06f9f9a008606178f623a019c33239) (anything not listed can be assumed to be "None"):
 
-{{< highlight markdown >}}
-| Physical Key | Mapping        | Action Performed               | Color                          |
-| ------------ | -------------- | ------------------------------ | ------------------------------ |
-| Tab          | tab            | Tab                            | `#00a3e9` (Desert Sun Blue)    |
-| W            | alt+right      | Move right 1 word              | `#00a3e9` (Desert Sun Blue)    |
-| E            | alt+right      | Move right 1 word              | `#00a3e9` (Desert Sun Blue)    |
-| R            | cmd+shift+z    | Redo                           | `#00a3e9` (Desert Sun Blue)    |
-| Y            | cmd+c          | Copy                           | `#00a3e9` (Desert Sun Blue)    |
-| U            | cmd+z          | Undo                           | `#00a3e9` (Desert Sun Blue)    |
-| I            | TO(1)          | Go to `Base`                   | `#f2671f` (Sunset Orange)      |
-| P            | cmd+v          | Paste                          | `#00a3e9` (Desert Sun Blue)    |
-| Backspace    | left           | Move left 1 character          | `#00a3e9` (Desert Sun Blue)    |
-| ESC          | TO(1)          | Go to `Base`                   | `#f2671f` (Sunset Orange)      |
-| A            | TO(1)          | Go to `Base`                   | `#f2671f` (Sunset Orange)      |
-| H            | left           | Move left 1 character          | `#00a3e9` (Desert Sun Blue)    |
-| J            | down           | Move down 1 character          | `#00a3e9` (Desert Sun Blue)    |
-| K            | up             | Move up 1 character            | `#00a3e9` (Desert Sun Blue)    |
-| L            | right          | Move right 1 character         | `#00a3e9` (Desert Sun Blue)    |
-| Shift        | MO(6)          | Momentarily go to `NRMLSHIFT`  | `#219e20` (Material Green)     |
-| X            | del            | Delete 1 character             | `#00a3e9` (Desert Sun Blue)    |
-| C            | TO(1)          | Go to `Base`                   | `#f2671f` (Sunset Orange)      |
-| V            | TG(5)          | Toggle `VISUAL`                | `#878eff` (Solarized Purple)   |
-| B            | alt+left       | Move left 1 word               | `#00a3e9` (Desert Sun Blue)    |
-| `/?`         | cmd+f          | Search (most apps use this)    | `#00a3e9` (Desert Sun Blue)    |
-| Enter        | down           | Move down 1 line               | `#00a3e9` (Desert Sun Blue)    |
-| QMK          | TRNS           | Go back to `Base`              | `#f2671f` (Sunset Orange)      |
-| CTRL         | ctrl           | Left Control key               | `#00a3e9` (Desert Sun Blue)    |
-| ALT          | alt            | Left Alt key                   | `#00a3e9` (Desert Sun Blue)    |
-| OS           | OSM(MOD_LGUI)  | One-shot CMD Modifier          | `#00a3e9` (Desert Sun Blue)    |
-| Lower        | Macro 1 Rec    | Start recording a macro        | `#00a3e9` (Desert Sun Blue)    |
-| Space        | Macro 1 Play   | Play macro 1 that was recorded | `#00a3e9` (Desert Sun Blue)    |
-| Raise        | Macro Stop Rec | Stop recording the macro       | `#00a3e9` (Desert Sun Blue)    |
-| Left         | MO(8)          | Momentarily go to `LGUI_ALL`   | `#ea1e63` (Material Red)       |
-| Right        | TG(7)          | Toggle `WINDOWZ`               | `#2e00e9` (Sunset Blue/Purple) |
-{{< / highlight >}}
+| Physical Key | Mapping        | Action Performed               | Color                        |
+| :----------- | :------------- | :----------------------------- | :--------------------------- |
+| Tab          | tab            | Tab                            | `#00a3e9` Desert Sun Blue    |
+| W            | alt+right      | Move right 1 word              | `#00a3e9` Desert Sun Blue    |
+| E            | alt+right      | Move right 1 word              | `#00a3e9` Desert Sun Blue    |
+| R            | cmd+shift+z    | Redo                           | `#00a3e9` Desert Sun Blue    |
+| Y            | cmd+c          | Copy                           | `#00a3e9` Desert Sun Blue    |
+| U            | cmd+z          | Undo                           | `#00a3e9` Desert Sun Blue    |
+| I            | TO(1)          | Go to `Base`                   | `#f2671f` Sunset Orange      |
+| P            | cmd+v          | Paste                          | `#00a3e9` Desert Sun Blue    |
+| Backspace    | left           | Move left 1 character          | `#00a3e9` Desert Sun Blue    |
+| ESC          | TO(1)          | Go to `Base`                   | `#f2671f` Sunset Orange      |
+| A            | TO(1)          | Go to `Base`                   | `#f2671f` Sunset Orange      |
+| H            | left           | Move left 1 character          | `#00a3e9` Desert Sun Blue    |
+| J            | down           | Move down 1 character          | `#00a3e9` Desert Sun Blue    |
+| K            | up             | Move up 1 character            | `#00a3e9` Desert Sun Blue    |
+| L            | right          | Move right 1 character         | `#00a3e9` Desert Sun Blue    |
+| Shift        | MO(6)          | Momentarily go to `NRMLSHIFT`  | `#219e20` Material Green     |
+| X            | del            | Delete 1 character             | `#00a3e9` Desert Sun Blue    |
+| C            | TO(1)          | Go to `Base`                   | `#f2671f` Sunset Orange      |
+| V            | TG(5)          | Toggle `VISUAL`                | `#878eff` Solarized Purple   |
+| B            | alt+left       | Move left 1 word               | `#00a3e9` Desert Sun Blue    |
+| `/?`         | cmd+f          | Search (most apps use this)    | `#00a3e9` Desert Sun Blue    |
+| Enter        | down           | Move down 1 line               | `#00a3e9` Desert Sun Blue    |
+| QMK          | TRNS           | Go back to `Base`              | `#f2671f` Sunset Orange      |
+| CTRL         | ctrl           | Left Control key               | `#00a3e9` Desert Sun Blue    |
+| ALT          | alt            | Left Alt key                   | `#00a3e9` Desert Sun Blue    |
+| OS           | OSM(MOD_LGUI)  | One-shot CMD Modifier          | `#00a3e9` Desert Sun Blue    |
+| Lower        | Macro 1 Rec    | Start recording a macro        | `#00a3e9` Desert Sun Blue    |
+| Space        | Macro 1 Play   | Play macro 1 that was recorded | `#00a3e9` Desert Sun Blue    |
+| Raise        | Macro Stop Rec | Stop recording the macro       | `#00a3e9` Desert Sun Blue    |
+| Left         | MO(8)          | Momentarily go to `LGUI_ALL`   | `#ea1e63` Material Red       |
+| Right        | TG(7)          | Toggle `WINDOWZ`               | `#2e00e9` Sunset Blue/Purple |
 
 Scroll down to the "Special Mention: RGB Handling" section to understand what the colors mean.
 
@@ -165,37 +149,35 @@ The `VISUAL` layer is meant to be the layer that performs selection-based action
 
 [Here is the keymapping for this layer.](https://gist.github.com/macintacos/6377d9bff05b048dcbdd45388681560f#file-visual-layer-md):
 
-{{< highlight markdown "linenos=table" >}}
-| Physical Key | Mapping         | Action Performed               | Color                        |
-| ------------ | --------------- | ------------------------------ | ---------------------------- |
-| W            | alt+shift+right | Select right 1 word            | `#878eff` (Solarized Purple) |
-| E            | alt+shift+right | Select right 1 word            | `#878eff` (Solarized Purple) |
-| Y            | cmd+c           | Copy                           | `#878eff` (Solarized Purple) |
-| I            | TO(1)           | Go to `Base`                   | `#878eff` (Solarized Purple) |
-| P            | cmd+v           | Paste                          | `#878eff` (Solarized Purple) |
-| Backspace    | shift+left      | Select left 1 character        | `#878eff` (Solarized Purple) |
-| ESC          | TO(1)           | Go to `Base`                   | `#878eff` (Solarized Purple) |
-| A            | TO(1)           | Go to `Base`                   | `#878eff` (Solarized Purple) |
-| D            | cmd+x           | Cut                            | `#878eff` (Solarized Purple) |
-| H            | shift+left      | Select left 1 character        | `#878eff` (Solarized Purple) |
-| J            | shift+down      | Select down 1 line             | `#878eff` (Solarized Purple) |
-| K            | shift+up        | Select up 1 line               | `#878eff` (Solarized Purple) |
-| L            | shift+right     | Select right 1 character       | `#878eff` (Solarized Purple) |
-| C            | TO(1)           | Go to `Base`                   | `#878eff` (Solarized Purple) |
-| V            | TRNS            | Go back to `NORMAL`            | `#00a3e9` (Desert Sun Blue)  |
-| B            | alt+shift+left  | Select left 1 word             | `#878eff` (Solarized Purple) |
-| <,           | shift+tab       | Unindent (depends on app)      | `#878eff` (Solarized Purple) |
-| >.           | tab             | Indent (depends on app)        | `#878eff` (Solarized Purple) |
-| Enter        | shift+down      | Select down 1 line             | `#878eff` (Solarized Purple) |
-| QMK          | TO(4)           | Go to `NORMAL`                 | `#00a3e9` (Desert Sun Blue)  |
-| CTRL         | ctrl            | Left Control key               | `#878eff` (Solarized Purple) |
-| ALT          | alt             | Left Alt key                   | `#878eff` (Solarized Purple) |
-| OS           | OSM(MOD_LGUI)   | One-shot `cmd` modifier        | `#878eff` (Solarized Purple) |
-| Lower        | Macro 1 Rec     | Start recording a macro        | `#878eff` (Solarized Purple) |
-| Space        | Macro 1 Play    | Play macro 1 that was recorded | `#878eff` (Solarized Purple) |
-| Raise        | Macro Stop Rec  | Stop recording the macro       | `#878eff` (Solarized Purple) |
-| Left         | MO(8)           | Momentarily go to `LGUI_ALL`   | `#ea1e63` (Material Red)     |
-{{< / highlight >}}
+| Physical Key | Mapping         | Action Performed               | Color                      |
+| :----------- | :-------------- | :----------------------------- | :------------------------- |
+| W            | alt+shift+right | Select right 1 word            | `#878eff` Solarized Purple |
+| E            | alt+shift+right | Select right 1 word            | `#878eff` Solarized Purple |
+| Y            | cmd+c           | Copy                           | `#878eff` Solarized Purple |
+| I            | TO(1)           | Go to `Base`                   | `#878eff` Solarized Purple |
+| P            | cmd+v           | Paste                          | `#878eff` Solarized Purple |
+| Backspace    | shift+left      | Select left 1 character        | `#878eff` Solarized Purple |
+| ESC          | TO(1)           | Go to `Base`                   | `#878eff` Solarized Purple |
+| A            | TO(1)           | Go to `Base`                   | `#878eff` Solarized Purple |
+| D            | cmd+x           | Cut                            | `#878eff` Solarized Purple |
+| H            | shift+left      | Select left 1 character        | `#878eff` Solarized Purple |
+| J            | shift+down      | Select down 1 line             | `#878eff` Solarized Purple |
+| K            | shift+up        | Select up 1 line               | `#878eff` Solarized Purple |
+| L            | shift+right     | Select right 1 character       | `#878eff` Solarized Purple |
+| C            | TO(1)           | Go to `Base`                   | `#878eff` Solarized Purple |
+| V            | TRNS            | Go back to `NORMAL`            | `#00a3e9` Desert Sun Blue  |
+| B            | alt+shift+left  | Select left 1 word             | `#878eff` Solarized Purple |
+| <,           | shift+tab       | Unindent (depends on app)      | `#878eff` Solarized Purple |
+| >.           | tab             | Indent (depends on app)        | `#878eff` Solarized Purple |
+| Enter        | shift+down      | Select down 1 line             | `#878eff` Solarized Purple |
+| QMK          | TO(4)           | Go to `NORMAL`                 | `#00a3e9` Desert Sun Blue  |
+| CTRL         | ctrl            | Left Control key               | `#878eff` Solarized Purple |
+| ALT          | alt             | Left Alt key                   | `#878eff` Solarized Purple |
+| OS           | OSM(MOD_LGUI)   | One-shot `cmd` modifier        | `#878eff` Solarized Purple |
+| Lower        | Macro 1 Rec     | Start recording a macro        | `#878eff` Solarized Purple |
+| Space        | Macro 1 Play    | Play macro 1 that was recorded | `#878eff` Solarized Purple |
+| Raise        | Macro Stop Rec  | Stop recording the macro       | `#878eff` Solarized Purple |
+| Left         | MO(8)           | Momentarily go to `LGUI_ALL`   | `#ea1e63` Material Red     |
 
 Not much else going on here, so onto the next layer.
 
@@ -207,26 +189,24 @@ The `NRMLSHFT` layer is only accessible from the `NORMAL` layer and, as the name
 
 [Here is the keymapping for this layer.](https://gist.github.com/macintacos/415a5131236fe94abbf7f23e5541b0e7):
 
-{{< highlight markdown "linenos=table" >}}
-| Physical Key | Mapping       | Action Performed                | Color                      |
-| ------------ | ------------- | ------------------------------- | -------------------------- |
-| W            | alt+right     | Move right 1 word               | `#219e20` (Material Green) |
-| E            | alt+right     | Move right 1 word               | `#219e20` (Material Green) |
-| I            | cmd+left      | Move to beginning of line       | `#219e20` (Material Green) |
-| P            | cmd+v         | Copy                            | `#219e20` (Material Green) |
-| Backspace    | backspace     | Backspace 1 character           | `#219e20` (Material Green) |
-| A            | cmd+right     | Move to end of line             | `#219e20` (Material Green) |
-| G            | cmd+down      | Move to bottom                  | `#219e20` (Material Green) |
-| Shift        | MO(6)         | Momentarily activate `NRMLSHFT` | `#219e20` (Material Green) |
-| X            | backspace     | Backspace 1 character           | `#219e20` (Material Green) |
-| B            | alt+left      | Move left 1 word                | `#219e20` (Material Green) |
-| <,           | cmd+shift+tab | Unindent (depends on app)       | `#219e20` (Material Green) |
-| >.           | cmd+tab       | Indent (depends on app)         | `#219e20` (Material Green) |
-| Enter        | enter         | Insert newline                  | `#219e20` (Material Green) |
-| CTRL         | ctrl          | Left Control key                | `#219e20` (Material Green) |
-| ALT          | alt           | Left Alt key                    | `#219e20` (Material Green) |
-| OS           | OSM(MOD_LGUI) | One-shot `cmd` modifier         | `#219e20` (Material Green) |
-{{< / highlight >}}
+| Physical Key | Mapping       | Action Performed                | Color                    |
+| :----------- | :------------ | :------------------------------ | :----------------------- |
+| W            | alt+right     | Move right 1 word               | `#219e20` Material Green |
+| E            | alt+right     | Move right 1 word               | `#219e20` Material Green |
+| I            | cmd+left      | Move to beginning of line       | `#219e20` Material Green |
+| P            | cmd+v         | Copy                            | `#219e20` Material Green |
+| Backspace    | backspace     | Backspace 1 character           | `#219e20` Material Green |
+| A            | cmd+right     | Move to end of line             | `#219e20` Material Green |
+| G            | cmd+down      | Move to bottom                  | `#219e20` Material Green |
+| Shift        | MO(6)         | Momentarily activate `NRMLSHFT` | `#219e20` Material Green |
+| X            | backspace     | Backspace 1 character           | `#219e20` Material Green |
+| B            | alt+left      | Move left 1 word                | `#219e20` Material Green |
+| <,           | cmd+shift+tab | Unindent (depends on app)       | `#219e20` Material Green |
+| >.           | cmd+tab       | Indent (depends on app)         | `#219e20` Material Green |
+| Enter        | enter         | Insert newline                  | `#219e20` Material Green |
+| CTRL         | ctrl          | Left Control key                | `#219e20` Material Green |
+| ALT          | alt           | Left Alt key                    | `#219e20` Material Green |
+| OS           | OSM(MOD_LGUI) | One-shot `cmd` modifier         | `#219e20` Material Green |
 
 ### The `WINDOWZ` Layer
 
@@ -238,37 +218,35 @@ This layer doesn't make much sense to the casual onlooker, mostly because it is 
 
 That's all there is to the `WINDOWZ` layer! [Here's the keymapping](https://gist.github.com/macintacos/3644540f41009cd56eeac0537d305fe9):
 
-{{< highlight markdown "linenos=table" >}}
-| Physical Key | Mapping            | Action Performed                      | Color                          |
-| ------------ | ------------------ | ------------------------------------- | ------------------------------ |
-| Q            | alt+ctrl+q         | Move window top left                  | `#2e00e9` (Sunset Blue/Purple) |
-| W            | alt+ctrl+w         | Move window top right                 | `#2e00e9` (Sunset Blue/Purple) |
-| E            | alt+ctrl+e         | Move window first two thirds          | `#2e00e9` (Sunset Blue/Purple) |
-| T            | alt+ctrl+t         | Move window last two thirds           | `#2e00e9` (Sunset Blue/Purple) |
-| P            | alt+ctrl+p         | Move window to previous display       | `#2e00e9` (Sunset Blue/Purple) |
-| Backspace    | alt+ctrl+backspace | Restore original window size/position | `#2e00e9` (Sunset Blue/Purple) |
-| ESC          | TO(1)              | Go to `Base`                          | `#878eff` (Solarized Purple)   |
-| A            | alt+ctrl+a         | Move window bottom left               | `#2e00e9` (Sunset Blue/Purple) |
-| S            | alt+ctrl+s         | Move window bottom right              | `#2e00e9` (Sunset Blue/Purple) |
-| D            | alt+ctrl+d         | Move window first third               | `#2e00e9` (Sunset Blue/Purple) |
-| F            | alt+ctrl+f         | Move window center third              | `#2e00e9` (Sunset Blue/Purple) |
-| G            | alt+ctrl+g         | Move window last third                | `#2e00e9` (Sunset Blue/Purple) |
-| H            | alt+ctrl+h         | Move window left half                 | `#2e00e9` (Sunset Blue/Purple) |
-| J            | alt+ctrl+j         | Move window bottom half               | `#2e00e9` (Sunset Blue/Purple) |
-| K            | alt+ctrl+k         | Move window top half                  | `#2e00e9` (Sunset Blue/Purple) |
-| L            | alt+ctrl+l         | Move window right half                | `#2e00e9` (Sunset Blue/Purple) |
-| '            | alt+ctrl+'         | 'Almost maximize' window              | `#2e00e9` (Sunset Blue/Purple) |
-| C            | alt+ctrl+c         | Center current window                 | `#2e00e9` (Sunset Blue/Purple) |
-| N            | alt+ctrl+n         | Move window to next display           | `#2e00e9` (Sunset Blue/Purple) |
-| ,            | alt+ctrl+,         | Make window smaller                   | `#2e00e9` (Sunset Blue/Purple) |
-| .            | alt+ctrl+.         | Make window bigger                    | `#2e00e9` (Sunset Blue/Purple) |
-| Enter        | alt+ctrl+enter     | Maximize window                       | `#2e00e9` (Sunset Blue/Purple) |
-| QMK          | TO(4)              | Go to `NORMAL`                        | `#00a3e9` (Desert Sun Blue)    |
-| Lower        | Macro 1 Rec        | Start recording a macro               | `#2e00e9` (Sunset Blue/Purple) |
-| Space        | Macro 1 Play       | Play macro 1 that was recorded        | `#2e00e9` (Sunset Blue/Purple) |
-| Raise        | Macro Stop Rec     | Stop recording the macro              | `#2e00e9` (Sunset Blue/Purple) |
-| Right        | -                  | Go back to `NORMAL`                   | `#00a3e9` (Desert Sun Blue)    |
-{{< / highlight >}}
+| Physical Key | Mapping            | Action Performed                 | Color                        |
+| :----------- | :----------------- | :------------------------------- | :--------------------------- |
+| Q            | alt+ctrl+q         | Move window top left             | `#2e00e9` Sunset Blue/Purple |
+| W            | alt+ctrl+w         | Move window top right            | `#2e00e9` Sunset Blue/Purple |
+| E            | alt+ctrl+e         | Move window first two thirds     | `#2e00e9` Sunset Blue/Purple |
+| T            | alt+ctrl+t         | Move window last two thirds      | `#2e00e9` Sunset Blue/Purple |
+| P            | alt+ctrl+p         | Move window to previous display  | `#2e00e9` Sunset Blue/Purple |
+| Backspace    | alt+ctrl+backspace | Restore original window size/pos | `#2e00e9` Sunset Blue/Purple |
+| ESC          | TO(1)              | Go to `Base`                     | `#878eff` Solarized Purple   |
+| A            | alt+ctrl+a         | Move window bottom left          | `#2e00e9` Sunset Blue/Purple |
+| S            | alt+ctrl+s         | Move window bottom right         | `#2e00e9` Sunset Blue/Purple |
+| D            | alt+ctrl+d         | Move window first third          | `#2e00e9` Sunset Blue/Purple |
+| F            | alt+ctrl+f         | Move window center third         | `#2e00e9` Sunset Blue/Purple |
+| G            | alt+ctrl+g         | Move window last third           | `#2e00e9` Sunset Blue/Purple |
+| H            | alt+ctrl+h         | Move window left half            | `#2e00e9` Sunset Blue/Purple |
+| J            | alt+ctrl+j         | Move window bottom half          | `#2e00e9` Sunset Blue/Purple |
+| K            | alt+ctrl+k         | Move window top half             | `#2e00e9` Sunset Blue/Purple |
+| L            | alt+ctrl+l         | Move window right half           | `#2e00e9` Sunset Blue/Purple |
+| '            | alt+ctrl+'         | 'Almost maximize' window         | `#2e00e9` Sunset Blue/Purple |
+| C            | alt+ctrl+c         | Center current window            | `#2e00e9` Sunset Blue/Purple |
+| N            | alt+ctrl+n         | Move window to next display      | `#2e00e9` Sunset Blue/Purple |
+| ,            | alt+ctrl+,         | Make window smaller              | `#2e00e9` Sunset Blue/Purple |
+| .            | alt+ctrl+.         | Make window bigger               | `#2e00e9` Sunset Blue/Purple |
+| Enter        | alt+ctrl+enter     | Maximize window                  | `#2e00e9` Sunset Blue/Purple |
+| QMK          | TO(4)              | Go to `NORMAL`                   | `#00a3e9` Desert Sun Blue    |
+| Lower        | Macro 1 Rec        | Start recording a macro          | `#2e00e9` Sunset Blue/Purple |
+| Space        | Macro 1 Play       | Play macro 1 that was recorded   | `#2e00e9` Sunset Blue/Purple |
+| Raise        | Macro Stop Rec     | Stop recording the macro         | `#2e00e9` Sunset Blue/Purple |
+| Right        | -                  | Go back to `NORMAL`              | `#00a3e9` Desert Sun Blue    |
 
 ### The `LGUI_ALL` Layer
 
@@ -288,19 +266,17 @@ The only layers where there are no other colors that signify other layers are `N
 
 Here are the colors that I used for this layout (colors are taken from the per-key color options in the Oryx configurator):
 
-{{< highlight markdown "linenos=table" >}}
-| Layer        | Color                             |
-| ------------ | --------------------------------- |
-| `Lower 0`    | `#ecb392` (Raspberry Light Brown) |
-| `Base 1`     | `#f2671f` (Sunset Orange)         |
-| `Raise 2`    | `#219e20` (Material Green)        |
-| `Adjust 3`   | `#d91f89` (Sunset Pink)           |
-| `NORMAL 4`   | `#00a3e9` (Desert Sun Blue)       |
-| `VISUAL 5`   | `#878eff` (Solarized Purple)      |
-| `NRMLSHFT 6` | `#219e20` (Material Green)        |
-| `WINDOWZ 7`  | `#2e00e9` (Sunset Blue/Purple)    |
-| `LGUI_ALL 8` | `#ea1e63` (Material Red)          |
-{{< / highlight >}}
+| Layer        | Color                           |
+| :----------- | :------------------------------ |
+| `Lower 0`    | `#ecb392` Raspberry Light Brown |
+| `Base 1`     | `#f2671f` Sunset Orange         |
+| `Raise 2`    | `#219e20` Material Green        |
+| `Adjust 3`   | `#d91f89` Sunset Pink           |
+| `NORMAL 4`   | `#00a3e9` Desert Sun Blue       |
+| `VISUAL 5`   | `#878eff` Solarized Purple      |
+| `NRMLSHFT 6` | `#219e20` Material Green        |
+| `WINDOWZ 7`  | `#2e00e9` Sunset Blue/Purple    |
+| `LGUI_ALL 8` | `#ea1e63` Material Red          |
 
 `NRMLSHIFT` and `Raise` having the same color as the dominant color is an accident that I'm too lazy to fix. They'll never be accessible from the same layer, so I think that it's fine.
 
