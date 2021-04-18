@@ -4,9 +4,7 @@
     "name": "Julian Torres",
     "url": "https://macintacos.com/"
   },
-  "dependencies": {
-    "inter-ui": "3.18.0"
-  },
+  "dependencies": {},
   "description": "The website for jmt.dev/macintacos.com",
   "devDependencies": {
     "auto-changelog": "2.2.0",
