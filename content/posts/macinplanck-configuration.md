@@ -1,8 +1,8 @@
-+++
-title = "The `macinplanck` Config"
-date = "2020-01-01"
-summary = "Shiny keyboards = fun time-sinks."
-+++
+---
+title: "The macinplanck Config"
+date: "2020-01-01"
+summary: "Shiny keyboards = fun time-sinks."
+---
 
 As a Christmas gift to myself, I decided to get a new keyboard; a keyboard that I had scoffed at using not too long ago because "lol where's all the keys?". That keyboard is the [Planck EZ Glow](https://ergodox-ez.com/pages/planck). This post is to describe how I have it setup, not to give a whole backstory as to why I decided to get it (that's for me and my journal to know, thank you very much). I affectionately refer to my keyboard as the **macinplanck**.
 

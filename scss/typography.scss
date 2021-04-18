@@ -1,0 +1,33 @@
+h1 {
+  font-family: "Inter Black";
+}
+
+.post-content {
+  h1,
+  h2 {
+    font-family: "Inter Bold";
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter Regular";
+}
+
+.entry-header {
+  font-family: "Inter Bold";
+}
+
+body {
+  font-family: ui-serif, Inter Regular;
+  line-height: 1.7em;
+}
+
+.post-content {
+  pre,
+  code {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  }
+}
