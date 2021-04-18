@@ -1,8 +1,9 @@
-+++
-title = "MongoDB 4.4 Structured Logging & `lnav`"
-date = "2020-08-18"
-summary = "I use `lnav` pretty much every day to look at MongoDB logs. Now you can too."
-+++
+---
+title: "MongoDB 4.4 Structured Logging & lnav"
+date: "2020-08-18"
+summary: "I use `lnav` pretty much every day to look at MongoDB logs. Now you can too."
+showToc: false
+---
 
 I've been using the `lnav` tool for parsing logs for a good long while now. Now that MongoDB 4.4 has structured logging, I took a shot at creating a formatting file for `lnav` so that it prints them out in a similar fashion that I've been used to with the pre-4.4 logging style. While I didn't want to get too far away from the default formatting, there are some conveniences added that make looking at these logs a bit nicer than just using something like `less` or parsing them with `jq`.
 

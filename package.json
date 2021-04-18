@@ -1,26 +1,33 @@
 {
   "author": {
-    "email": "juliantorres@hey.com",
+    "email": "julian.m.tor@gmail.com",
     "name": "Julian Torres",
     "url": "https://macintacos.com/"
+  },
+  "dependencies": {
+    "inter-ui": "3.18.0"
   },
   "description": "The website for jmt.dev/macintacos.com",
   "devDependencies": {
     "auto-changelog": "2.2.0",
+    "concurrently": "6.0.2",
     "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "2.1.1",
-    "release-it": "^13.6.9"
+    "release-it": "^13.6.9",
+    "sass": "1.32.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --fix",
+    "*.{ts,tsx,js,jsx,css,md}": "prettier --write"
   },
   "name": "jmt_dev_site",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/macintacos/site"
-  },
   "release-it": {
-    "hooks": {
-      "after:bump": "npx auto-changelog -p"
-    },
     "git": {
       "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
       "commit": false,
@@ -31,22 +38,22 @@
       "release": true,
       "tokenRef": "RELEASE_IT_GITHUB_TOKEN"
     },
+    "hooks": {
+      "after:bump": "npx auto-changelog -p"
+    },
     "npm": {
       "publish": false
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,css,md}": "prettier --write",
-    "*.{js,jsx}": "eslint --fix"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/macintacos/site"
   },
   "scripts": {
     "release": "release-it",
-    "watch": "hugo server --buildDrafts --bind $(ipconfig getifaddr en0) --baseURL http://$(ipconfig getifaddr en0)"
+    "watch": "concurrently \"npm run hugo-watch\" \"npm run scss-watch\"",
+    "hugo-watch": "hugo server --buildDrafts --bind $(ipconfig getifaddr en0) --baseURL http://$(ipconfig getifaddr en0)",
+    "scss-watch": "sass --watch scss:assets/css/extended"
   },
   "version": "3.0.1"
 }
