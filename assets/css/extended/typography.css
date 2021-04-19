@@ -19,13 +19,14 @@ h6 {
 }
 
 body {
-  font-family: ui-serif, Inter Regular;
+  font-family: "Inter Regular";
   line-height: 1.7em;
 }
 
 .post-content pre,
 .post-content code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: "JetBrains Mono Regular", SFMono-Regular, Consolas,
+    Liberation Mono, Menlo, monospace;
 }
 
 /*# sourceMappingURL=typography.css.map */

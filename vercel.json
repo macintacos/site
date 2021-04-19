@@ -3,5 +3,9 @@
     "env": {
       "HUGO_VERSION": "0.82.0"
     }
+  },
+  "github": {
+    "enabled": true,
+    "silent": true
   }
 }
