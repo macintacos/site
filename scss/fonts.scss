@@ -2,26 +2,26 @@
   font-family: "Inter Light";
   font-weight: 300;
   src: local("Inter Light"),
-    url("/fonts/Inter/Inter-Light.ttf") format("truetype");
+    url("../../fonts/Inter/Inter-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Inter Regular";
   font-weight: 400;
   src: local("Inter Regular"),
-    url("/fonts/Inter/Inter-Regular.ttf") format("truetype");
+    url("../../fonts/Inter/Inter-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Inter Bold";
   font-weight: 700;
   src: local("Inter Bold"),
-    url("/fonts/Inter/Inter-Bold.ttf") format("truetype");
+    url("../../fonts/Inter/Inter-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Inter Black";
   font-weight: 900;
   src: local("Inter Black"),
-    url("/fonts/Inter/Inter-Black.ttf") format("truetype");
+    url("../../fonts/Inter/Inter-Black.ttf") format("truetype");
 }
