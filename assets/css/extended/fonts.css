@@ -1,22 +1,38 @@
 @font-face {
   font-family: "Inter Light";
   font-weight: 300;
-  src: url("/fonts/Inter/Inter-Light.ttf") format("truetype");
+  src: local("Inter Light"),
+    url("/fonts/Inter/Inter-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "Inter Regular";
   font-weight: 400;
-  src: url("/fonts/Inter/Inter-Regular.ttf") format("truetype");
+  src: local("Inter Regular"),
+    url("/fonts/Inter/Inter-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Inter Bold";
   font-weight: 700;
-  src: url("/fonts/Inter/Inter-Bold.ttf") format("truetype");
+  src: local("Inter Bold"),
+    url("/fonts/Inter/Inter-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Inter Black";
   font-weight: 900;
-  src: url("/fonts/Inter/Inter-Black.ttf") format("truetype");
+  src: local("Inter Black"),
+    url("/fonts/Inter/Inter-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono Regular";
+  font-weight: 400;
+  src: local("JetBrains Mono Regular"),
+    url("/fonts/JetBrains/JetBrainsMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono Italic";
+  font-weight: 400;
+  src: local("JetBrains Mono Italic")
+    url("/fonts/JetBrains/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
 /*# sourceMappingURL=fonts.css.map */
