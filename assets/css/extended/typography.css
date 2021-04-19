@@ -25,7 +25,8 @@ body {
 
 .post-content pre,
 .post-content code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: "JetBrains Mono Regular", SFMono-Regular, Consolas,
+    Liberation Mono, Menlo, monospace;
 }
 
 /*# sourceMappingURL=typography.css.map */
