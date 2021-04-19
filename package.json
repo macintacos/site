@@ -53,5 +53,5 @@
     "hugo-watch": "hugo server --buildDrafts --bind $(ipconfig getifaddr en0) --baseURL http://$(ipconfig getifaddr en0)",
     "scss-watch": "sass --watch scss:assets/css/extended"
   },
-  "version": "4.0.0"
+  "version": "4.0.1"
 }
