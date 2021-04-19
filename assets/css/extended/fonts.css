@@ -31,7 +31,7 @@
 @font-face {
   font-family: "JetBrains Mono Italic";
   font-weight: 400;
-  src: local("JetBrains Mono Italic")
+  src: local("JetBrains Mono Italic"),
     url("/fonts/JetBrains/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
