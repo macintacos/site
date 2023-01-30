@@ -32,8 +32,8 @@
 		// Configuration for TypeScript files
 		{
 			"files": ["**/*.ts", "**/*.tsx"],
-			"plugins": ["@typescript-eslint"],
-			"extends": ["plugin:prettier/recommended"],
+			"plugins": ["@typescript-eslint", "tailwindcss"],
+			"extends": ["plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
 			"parserOptions": {
 				"project": "./tsconfig.json"
 			},
@@ -47,14 +47,20 @@
 				],
 				"@typescript-eslint/comma-dangle": "off", // Avoid conflict rule between Eslint and Prettier
 				"@typescript-eslint/consistent-type-imports": "error", // Ensure `import type` is used when it's necessary
-				"@typescript-eslint/no-unused-vars": "off"
+				"@typescript-eslint/no-unused-vars": "off",
+				"tailwindcss/classnames-order": [
+					"warn",
+					{
+						"officialSorting": true
+					}
+				] // Follow the same ordering as the official plugin `prettier-plugin-tailwindcss`
 			}
 		},
 		// Configuration for Astro
 		{
 			"files": ["**/*.astro"],
-			"plugins": ["@typescript-eslint"],
-			"extends": ["plugin:prettier/recommended"],
+			"plugins": ["@typescript-eslint", "tailwindcss"],
+			"extends": ["plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
 			"parser": "astro-eslint-parser",
 			"parserOptions": {
 				"parser": "@typescript-eslint/parser",
@@ -71,7 +77,13 @@
 				],
 				"@typescript-eslint/comma-dangle": "off", // Avoid conflict rule between Eslint and Prettier
 				"@typescript-eslint/consistent-type-imports": "error", // Ensure `import type` is used when it's necessary
-				"@typescript-eslint/no-unused-vars": "off"
+				"@typescript-eslint/no-unused-vars": "off",
+				"tailwindcss/classnames-order": [
+					"warn",
+					{
+						"officialSorting": true
+					}
+				] // Follow the same ordering as the official plugin `prettier-plugin-tailwindcss`
 			},
 			"globals": {
 				"Astro": "readonly"
