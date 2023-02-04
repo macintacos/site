@@ -3,11 +3,15 @@ import { SITE } from '@config';
 
 const fetchFonts = async () => {
 	// Regular Font
-	const fontFileRegular = await fetch('/fonts/BerkeleyMono-Regular.woff');
+	const fontFileRegular = await fetch(
+		'https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf'
+	);
 	const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
 
 	// Bold Font
-	const fontFileBold = await fetch('/fonts/BerkeleyMono-Bold.woff');
+	const fontFileBold = await fetch(
+		'https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf'
+	);
 	const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
 	return { fontRegular, fontBold };
@@ -114,13 +118,15 @@ const options: SatoriOptions = {
 	embedFont: true,
 	fonts: [
 		{
-			name: 'BerkeleyMono',
+			name: 'IBM Plex Mono',
 			data: fontRegular,
+			weight: 400,
 			style: 'normal'
 		},
 		{
-			name: 'BerkeleyMono',
+			name: 'IBM Plex Mono',
 			data: fontBold,
+			weight: 600,
 			style: 'normal'
 		}
 	]
