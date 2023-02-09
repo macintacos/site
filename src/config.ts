@@ -22,18 +22,21 @@ export const SOCIALS: SocialObjects = [
 		name: 'Mail',
 		href: 'mailto:julian.m.tor@gmail.com',
 		linkTitle: `Send an email to ${SITE.title}`,
-		active: true
+		active: true,
+		rel: 'me'
 	},
 	{
 		name: 'Mastodon',
 		href: 'https://mastodon.social/@macintacos',
 		linkTitle: `${SITE.title} on Mastodon`,
-		active: true
+		active: true,
+		rel: 'me'
 	},
 	{
 		name: 'Github',
 		href: 'https://github.com/macintacos',
 		linkTitle: ` ${SITE.title} on Github`,
-		active: true
+		active: true,
+		rel: 'me'
 	}
 ];
